@@ -2,7 +2,7 @@
     <string name="app_name">Goal Keeper</string>
     <string name="team_a_score">0</string>
     <string name="team_b_score">0</string>
-    <string name="add_point">Add Point</string>
+    <string name="add_point">Add Goal</string>
     <string name="penalty">Add Penalty</string>
     <string name="reset">Reset</string>
     <string name="points_text">Goals</string>
@@ -42,4 +42,7 @@
         <item>Washington Capitals</item>
         <item>Winnipeg Jets</item>
     </string-array>
+    <dimen name="margin_med">16dp</dimen>
+    <dimen name="margin_wide">24dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
 </resources>
