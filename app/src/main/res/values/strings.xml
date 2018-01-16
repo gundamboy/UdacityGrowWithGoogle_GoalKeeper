@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Goal Keeper</string>
-    <string name="team_a_score">0</string>
-    <string name="team_b_score">0</string>
+    <string name="team_a_score">Goals 0</string>
+    <string name="team_b_score">Goals 0</string>
+    <string name="team_a_penalties">Penalties 0</string>
+    <string name="team_b_penalties">Penalties 0</string>
     <string name="add_point">Add Goal</string>
     <string name="penalty">Add Penalty</string>
     <string name="reset">Reset</string>
@@ -44,5 +46,6 @@
     </string-array>
     <dimen name="margin_med">16dp</dimen>
     <dimen name="margin_wide">24dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
     <dimen name="margin_small">8dp</dimen>
 </resources>

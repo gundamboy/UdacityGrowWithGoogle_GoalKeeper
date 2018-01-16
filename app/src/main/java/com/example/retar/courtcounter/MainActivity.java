@@ -93,10 +93,10 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamB = 0;
         penaltyTeamA = 0;
         penaltyTeamB = 0;
-        displayForTeamA(scoreTeamA);
-        displayForTeamB(scoreTeamA);
-        displayPenaltyTeamA(penaltyTeamA);
-        displayPenaltyTeamB(penaltyTeamB);
+        displayForTeamA("Goals " + scoreTeamA);
+        displayForTeamB("Goals " + scoreTeamA);
+        displayPenaltyTeamA("Penalties " + penaltyTeamA);
+        displayPenaltyTeamB("Penalties " + penaltyTeamB);
     }
 
     /**
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void addOneForTeamA(View v) {
         scoreTeamA = scoreTeamA + 1;
-        displayForTeamA(scoreTeamA);
+        displayForTeamA("Goals " + scoreTeamA);
     }
 
     /**
@@ -112,21 +112,22 @@ public class MainActivity extends AppCompatActivity {
      */
     public void addPenaltyTeamA(View v) {
         penaltyTeamA = penaltyTeamA + 1;
-        displayPenaltyTeamA(penaltyTeamA);
+        displayPenaltyTeamA("Penalties " + penaltyTeamA);
     }
 
     /**
      * Displays the given score for Team A.
+     * @param score
      */
-    public void displayForTeamA(int score) {
-        scoreView.setText(String.valueOf(score));
+    public void displayForTeamA(String score) {
+        scoreView.setText(score);
     }
 
     /**
      * Displays the given penalties for Team A.
      */
-    public void displayPenaltyTeamA(int penalty) {
-        penaltyView.setText(String.valueOf(penalty));
+    public void displayPenaltyTeamA(String penalty) {
+        penaltyView.setText(penalty);
     }
 
     /**
@@ -134,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void addOneForTeamB(View v) {
         scoreTeamB = scoreTeamB + 1;
-        displayForTeamB(scoreTeamB);
+        displayForTeamB("Goals " + scoreTeamB);
     }
 
     /**
@@ -142,22 +143,20 @@ public class MainActivity extends AppCompatActivity {
      */
     public void addPenaltyTeamB(View v) {
         penaltyTeamB = penaltyTeamB + 1;
-        displayPenaltyTeamB(penaltyTeamB);
+        displayPenaltyTeamB("Penalties " + penaltyTeamB);
     }
 
     /**
      * Displays the given score for Team B.
      */
-    public void displayForTeamB(int score) {
-
-        scoreView_team_b.setText(String.valueOf(score));
+    public void displayForTeamB(String score) {
+        scoreView_team_b.setText(score);
     }
 
     /**
      * Displays the given penalties for Team B.
      */
-    public void displayPenaltyTeamB(int penalty) {
-
-        penaltyView_team_b.setText(String.valueOf(penalty));
+    public void displayPenaltyTeamB(String penalty) {
+        penaltyView_team_b.setText(penalty);
     }
 }

@@ -19,7 +19,6 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-
                 <Spinner
                     android:id="@+id/team_a_name"
                     android:layout_width="wrap_content"
@@ -29,59 +28,30 @@
                     android:textAppearance="@style/text_small"
                     android:prompt="@string/team_name_prompt"/>
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/team_a_score"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:textAppearance="@style/scores_text"
+                    android:layout_marginTop="@dimen/margin_med"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:layout_marginLeft="@dimen/margin_med"
+                    android:gravity="right"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:text="@string/team_a_score" />
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_weight="2"
-                        android:layout_height="wrap_content"
-                        android:gravity="right"
-                        android:textAppearance="@style/scores_identifier_text"
-                        android:layout_marginTop="@dimen/margin_med"
-                        android:layout_marginBottom="@dimen/margin_small"
-                        android:text="@string/points_text" />
-
-                    <TextView
-                        android:id="@+id/team_a_score"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/scores_text"
-                        android:layout_marginTop="@dimen/margin_med"
-                        android:layout_marginBottom="@dimen/margin_small"
-                        android:layout_marginLeft="@dimen/margin_med"
-                        android:text="@string/team_a_score" />
-                </LinearLayout>
-
-                <LinearLayout
+                <TextView
+                    android:id="@+id/team_a_penalties"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:textAppearance="@style/scores_text"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginBottom="@dimen/margin_wide"
+                    android:layout_marginLeft="@dimen/margin_med"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:gravity="right"
+                    android:text="@string/team_a_penalties" />
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_weight="2"
-                        android:layout_height="wrap_content"
-                        android:gravity="right"
-                        android:textAppearance="@style/scores_identifier_text"
-                        android:layout_marginTop="@dimen/margin_small"
-                        android:layout_marginBottom="@dimen/margin_wide"
-                        android:text="@string/penalties_text" />
-
-                    <TextView
-                        android:id="@+id/team_a_penalties"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/scores_text"
-                        android:layout_marginTop="@dimen/margin_small"
-                        android:layout_marginBottom="@dimen/margin_wide"
-                        android:layout_marginLeft="@dimen/margin_med"
-                        android:text="@string/team_a_score" />
-                </LinearLayout>
 
                 <Button
                     android:layout_width="match_parent"
@@ -124,60 +94,29 @@
                     android:textAppearance="@style/text_small"
                     android:prompt="@string/team_name_prompt"/>
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/team_b_score"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:textAppearance="@style/scores_text"
+                    android:layout_marginTop="@dimen/margin_med"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:layout_marginLeft="@dimen/margin_med"
+                    android:gravity="right"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:text="@string/team_b_score" />
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_weight="2"
-                        android:layout_height="wrap_content"
-                        android:gravity="right"
-                        android:textAppearance="@style/scores_identifier_text"
-                        android:layout_marginTop="@dimen/margin_med"
-                        android:layout_marginBottom="@dimen/margin_small"
-                        android:text="@string/points_text" />
-
-                    <TextView
-                        android:id="@+id/team_b_score"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/scores_text"
-                        android:layout_marginTop="@dimen/margin_med"
-                        android:layout_marginBottom="@dimen/margin_small"
-                        android:layout_marginLeft="@dimen/margin_med"
-                        android:text="@string/team_b_score" />
-                </LinearLayout>
-
-                <LinearLayout
+                <TextView
+                    android:id="@+id/team_b_penalties"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_weight="2"
-                        android:layout_height="wrap_content"
-                        android:gravity="right"
-                        android:textAppearance="@style/scores_identifier_text"
-                        android:layout_marginTop="@dimen/margin_small"
-                        android:layout_marginBottom="@dimen/margin_wide"
-                        android:text="@string/penalties_text" />
-
-                    <TextView
-                        android:id="@+id/team_b_penalties"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/scores_text"
-                        android:layout_marginTop="@dimen/margin_small"
-                        android:layout_marginBottom="@dimen/margin_wide"
-                        android:layout_marginLeft="@dimen/margin_med"
-                        android:text="@string/team_b_score" />
-                </LinearLayout>
-
+                    android:textAppearance="@style/scores_text"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginBottom="@dimen/margin_wide"
+                    android:layout_marginLeft="@dimen/margin_med"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:gravity="right"
+                    android:text="@string/team_b_penalties" />
 
                 <Button
                     android:layout_width="match_parent"
