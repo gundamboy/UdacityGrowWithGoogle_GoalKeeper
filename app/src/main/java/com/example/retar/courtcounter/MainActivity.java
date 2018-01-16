@@ -18,6 +18,13 @@ public class MainActivity extends AppCompatActivity {
     Spinner team_a_name_spinner;
     Spinner team_b_name_spinner;
 
+    private static final String KEY_TEAM_A_NAME = "team_a_name";
+    private static final String KEY_TEAM_B_NAME = "team_b_name";
+    private static final String KEY_TEAM_A_GOALS = "team_a_goals";
+    private static final String KEY_TEAM_B_GOALS = "team_b_goals";
+    private static final String KEY_TEAM_A_PENALTIES = "team_a_penalties";
+    private static final String KEY_TEAM_B_PENALTIES = "team_b_penalties";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,12 +42,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        String team_a_goals = savedInstanceState.getString("team_a_goals");
-        String team_a_penalties = savedInstanceState.getString("team_a_penalties");
-        String team_b_goals = savedInstanceState.getString("team_b_goals");
-        String team_b_penalties = savedInstanceState.getString("team_b_penalties");
-        String team_a_name = savedInstanceState.getString("team_a_name");
-        String team_b_name = savedInstanceState.getString("team_b_name");
+        String team_a_goals = savedInstanceState.getString(KEY_TEAM_A_GOALS);
+        String team_a_penalties = savedInstanceState.getString(KEY_TEAM_A_PENALTIES);
+        String team_b_goals = savedInstanceState.getString(KEY_TEAM_B_GOALS);
+        String team_b_penalties = savedInstanceState.getString(KEY_TEAM_B_PENALTIES);
+        String team_a_name = savedInstanceState.getString(KEY_TEAM_A_NAME);
+        String team_b_name = savedInstanceState.getString(KEY_TEAM_B_NAME);
 
         if (savedInstanceState != null) {
             scoreView.setText(team_a_goals);
@@ -61,12 +68,12 @@ public class MainActivity extends AppCompatActivity {
         String team_b_penalties_to_save = penaltyView_team_b.getText().toString();
         String team_a = team_a_name_spinner.getSelectedItem().toString();
         String team_b = team_b_name_spinner.getSelectedItem().toString();
-        outState.putString("team_a_goals", team_a_score_to_save);
-        outState.putString("team_a_penalties", team_a_penalties_to_save);
-        outState.putString("team_b_goals", team_b_score_to_save);
-        outState.putString("team_b_penalties", team_b_penalties_to_save);
-        outState.putString("team_a_name", team_a);
-        outState.putString("team_b_name", team_b);
+        outState.putString(KEY_TEAM_A_GOALS, team_a_score_to_save);
+        outState.putString(KEY_TEAM_A_PENALTIES, team_a_penalties_to_save);
+        outState.putString(KEY_TEAM_B_GOALS, team_b_score_to_save);
+        outState.putString(KEY_TEAM_B_PENALTIES, team_b_penalties_to_save);
+        outState.putString(KEY_TEAM_A_NAME, team_a);
+        outState.putString(KEY_TEAM_B_NAME, team_b);
     }
 
     /**
